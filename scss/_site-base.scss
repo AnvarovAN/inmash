@@ -216,6 +216,89 @@ h1, h2, h3, h4, h5,
 }
 
 .site-section {
+	&.bg-light {
+		background-color: #f8f9fa;
+		padding: 5rem 0;
+	
+		.title {
+		  margin-bottom: 3rem;
+	
+		  h1 {
+			font-size: 2.5rem;
+			font-weight: 700;
+		  }
+		}
+	
+		.tech__blok {
+		  .block__35630.tech {
+			position: relative;
+			padding: 2rem;
+			color: #fff;
+			text-align: center;
+			background-size: cover;
+			background-position: center;
+			border-radius: 10px;
+			min-height: 200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+	
+			// Полупрозрачный оверлей для читаемости текста
+			&::before {
+			  content: '';
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  background: rgba(0, 0, 0, 0.5); // Полупрозрачный чёрный слой
+			  border-radius: 10px;
+			}
+	
+			h3, p {
+			  position: relative;
+			  z-index: 1; // Чтобы текст был поверх оверлея
+			}
+	
+			h3 {
+			  font-size: 1.5rem;
+			  margin-bottom: 1rem;
+			  text-transform: uppercase;
+			}
+	
+			p {
+			  font-size: 1rem;
+			}
+		  }
+	
+		  // Фоновые изображения для каждого блока
+		  &.tech__blok-1 .block__35630.tech {
+			background-image: url('../images/1.png');
+		  }
+		  &.tech__blok-2 .block__35630.tech {
+			background-image: url('../images/2.png');
+		  }
+		  &.tech__blok-3 .block__35630.tech {
+			background-image: url('../images/3.png');
+		  }
+		  &.tech__blok-4 .block__35630.tech {
+			background-image: url('../images/4.png');
+		  }
+		  &.tech__blok-5 .block__35630.tech {
+			background-image: url('../images/5.png');
+		  }
+		  &.tech__blok-6 .block__35630.tech {
+			background-image: url('../images/6.png');
+		  }
+		  &.tech__blok-7 .block__35630.tech {
+			background-image: url('../images/7.png');
+		  }
+		  &.tech__blok-8 .block__35630.tech {
+			background-image: url('../images/8.png');
+		  }
+		}
+	  }
 	padding: 2.5em 0;
 	@include media-breakpoint-up(md) {
 		padding: 5em 0;
